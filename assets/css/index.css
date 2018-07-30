@@ -1,0 +1,103 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 25%;
+  background-color: #405641;
+
+  color: #92aa93;
+}
+
+.chapter-content {
+  margin-top: 8%;
+  margin-left: 30%;
+  margin-right: 25%;
+}
+
+.work-in-progress {
+  border: 8px solid #fcd785;
+  background-color: #fff0d1;
+  padding: 3%;
+  color: #a38034;
+  margin-bottom: 3%;
+}
+
+.email-me {
+  margin-bottom: 1%;
+}
+
+.chapter-header {
+  font-size: 3em;
+}
+
+.chapter-number {
+  float: right;
+  color: #9dc69f;
+}
+
+.previous {
+  float: left;
+}
+
+.toc {
+  margin-left: 10%;
+}
+
+.next {
+  float: right;
+}
+
+@media only screen and (min-width: 950px) {
+  .sidebar {
+    display: block;
+    float: left;
+    position: fixed;
+  }
+
+  .sidebar-content {
+    margin-top: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .chapter-links {
+    border-bottom: 1px solid;
+    margin-bottom: 2%;
+    padding-bottom: 5%;
+  }
+
+  .sidebar-title {
+    font-size: 1.5em;
+    border-bottom: 1px solid;
+  }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 949px) {
+  .sidebar {
+    display: block;
+    float: top;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+  }
+
+  .chapter-content {
+    margin-top: 15%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .chapter-links {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {%  include head.html %}
+  </head>
+  <body>
+    {% include sidebar.html %}
+
+    <div class="chapter-content">
+      <h1 class="chapter-header">{{ page.title }} <span class="chapter-number">{{ page.number }}</span></h1>
+
+      {% include work_in_progress.html %}
+      {{ content }}
+    </div>
+
+</html>

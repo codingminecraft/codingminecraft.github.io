@@ -1,0 +1,17 @@
+<div class="sidebar">
+  <div class="sidebar-content">
+    <h1 class="sidebar-title">Coding Minecraft</h1>
+
+    <div class="chapter-links">
+      {% for link in page.contents %}
+      <div class="chapter-link">
+        <a>{{ link }}</a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="paginate">
+      <a class="previous">Previous</a><a class="toc">TOC</a><a class="next">Next</a>
+    </div>
+  </div>
+</div>
