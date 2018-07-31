@@ -1,17 +1,23 @@
 <div class="sidebar">
   <div class="sidebar-content">
-    <h1 class="sidebar-title">Coding Minecraft</h1>
+    {% if page.toc == "" %}
+      <h1 class="sidebar-title">Coding Minecraft</h1>
+    {% else %}
+      <h1 class="sidebar-title">{{ page.title | replace: "-", " " }}</h1>
+    {% endif %}
+    <h1 class="topbar-title">Coding Minecraft</h1>
 
     <div class="chapter-links">
       {% for link in page.contents %}
       <div class="chapter-link">
-        <a>{{ link }}</a>
+        <a href="#{{ link | replace: " ", "-" }}" class="link">- {{ link }}</a>
       </div>
       {% endfor %}
-    </div>
+      <br />
 
-    <div class="paginate">
-      <a class="previous">Previous</a><a class="toc">TOC</a><a class="next">Next</a>
+      <div class="chapter-link">
+        <a href="/" class="link">Table of Contents</a>
+      </div>
     </div>
   </div>
 </div>

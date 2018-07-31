@@ -13,4 +13,16 @@
       {{ content }}
     </div>
 
+    {% if page.nextChapter %}
+    <div class="right-arrow" onclick="location.href='/{{ page.nextChapter | replace: " ", "-" }}'">
+      <span class="right-arrow-text"><i class="fas fa-angle-right"></i></span>
+    </div>
+    {% endif %}
+
+    {% if page.previousChapter %}
+    <div class="left-arrow" onclick="location.href='/{{ page.previousChapter | replace: " ", "-"}}'">
+      <span class="left-arrow-text"><i class="fas fa-angle-left"></i></span>
+    </div>
+    {% endif %}
+
 </html>

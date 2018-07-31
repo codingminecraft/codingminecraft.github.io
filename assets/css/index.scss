@@ -1,0 +1,204 @@
+---
+---
+
+$link-color: #92aa93;
+$navbar-color: #383527;
+$light-gray: #bbb;
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a.link:link {
+  color: $link-color;
+}
+
+a.link:visited {
+  color: $link-color;
+}
+
+a.link:hover {
+  color: darken($link-color, 25%);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* TOC STYLES*/
+.section-link {
+  margin-left: 4%;
+  padding: 1%;
+}
+
+
+
+
+/* FORM STYLES */
+
+.work-in-progress {
+  padding: 1%;
+}
+
+.work-in-progress p {
+  margin-right: 8%;
+}
+
+.email-me {
+  margin-bottom: 1%;
+  font-size: 1.1em;
+}
+
+.signup {
+  font-size: .8em;
+}
+
+
+
+
+
+
+/* CHAPTER CONTENT STYLES */
+.chapter-header {
+  font-size: 3em;
+}
+
+.chapter-number {
+  float: right;
+  color: $link-color;
+}
+
+.previous {
+  float: left;
+}
+
+.chapter-content {
+  margin-top: 8%;
+  margin-left: 30%;
+  margin-right: 25%;
+  font-size: 1.2em;
+}
+
+
+
+
+/* ARROWS */
+.right-arrow, .left-arrow {
+  height: 100%;
+  position: fixed;
+  font-size: 3em;
+  right: 0;
+  width: 4%;
+  padding-left: 1%;
+  color: $light-gray;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 25%;
+}
+
+.right-arrow-text, .left-arrow-text {
+  position: relative;
+  top: 50%;
+}
+
+.right-arrow:hover, .left-arrow:hover {
+  transition: .5s;
+  color: darken($light-gray, 20%);
+}
+
+
+
+/* SIDEBAR/TOP BAR STYLES */
+.sidebar {
+  height: 100%;
+  width: 25%;
+  background-color: $navbar-color;
+}
+
+.sidebar-title, .topbar-title {
+  font-size: 1.5em;
+  border-bottom: 1px solid darken($link-color, 20%);
+  color: $link-color;
+}
+
+
+@media only screen and (min-width: 950px) {
+  .sidebar {
+    display: block;
+    float: left;
+    position: fixed;
+  }
+
+  .sidebar-title {
+    padding-bottom: 5%;
+  }
+
+  .sidebar-content {
+    margin-top: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .chapter-links {
+    margin-bottom: 2%;
+    padding-bottom: 5%;
+  }
+
+  .topbar-title {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 949px) {
+  .sidebar {
+    display: block;
+    float: top;
+    position: fixed;
+    width: 100%;
+    height: 12%;
+  }
+
+  .chapter-content {
+    margin-top: 15%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .chapter-links {
+    display: none;
+  }
+
+  .sidebar-title {
+    display: none;
+  }
+
+  .topbar-title {
+    border: none;
+    font-size: 2em;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .left-arrow {
+    left: 0;
+    border: none;
+  }
+
+  .right-arrow {
+    border: none;
+  }
+}
