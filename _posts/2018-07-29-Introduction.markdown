@@ -3,7 +3,7 @@ layout: chapter
 title:  "Introduction"
 contents: ["Who is this book for", "What prior knowledge is required", "Source content", "Conventions used in this book"]
 number: 0
-nextChapter: "A Brief Intro to C++"
+nextChapter: "A Brief Intro To C++"
 previousChapter: "Toc"
 ---
 <p class="drop-cap">H</p>ave you ever played Minecraft? If you have, and you're a programmer, then like me you may have thought, "How do you code this?". Well, after about 6 months in the making- and one or two different languages along the way- I have come up with a solution so you don't have too!
