@@ -28,10 +28,62 @@ a.link:hover {
   text-decoration: none;
 }
 
+p {
+  padding: 1%;
+}
+
+p.drop-cap {
+  float: left;
+  font-size: 5em;
+  line-height: 0.85em;
+  padding-right: 0.1em;
+}
+
+footer {
+  margin-top: 8%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  border-top: 1px solid #ccc;
+}
+
+footer.p {
+  width: 15%;
+  margin: auto;
+}
+
+
+
+div.code-header {
+  position: absolute;
+  width: 150px;
+  right: -160px;
+  font-size: .8em;
+  color: #aaa;
+}
 
 
 
 
+/* NOTE STYLES */
+div.info {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 4px;
+  border-left: 4px solid #a5c7ff;
+  padding: 3%;
+  color: #888;
+  font-style: italic;
+}
+
+div.warning {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 4px;
+  border-left: 4px solid #ed0202;
+  padding: 3%;
+  color: #888;
+  font-style: italic;
+}
 
 
 
@@ -40,6 +92,11 @@ a.link:hover {
 .section-link {
   margin-left: 4%;
   padding: 1%;
+}
+
+.section-title {
+  font-style: italic;
+  font-weight: bold;
 }
 
 
@@ -84,10 +141,19 @@ a.link:hover {
 }
 
 .chapter-content {
+  position: relative;
   margin-top: 8%;
   margin-left: 30%;
   margin-right: 25%;
   font-size: 1.2em;
+}
+
+.chapter-content img {
+  display: block;
+  max-height: 400px;
+  max-height: 45vh;
+  width: auto;
+  margin: auto;
 }
 
 

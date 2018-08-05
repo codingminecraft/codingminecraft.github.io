@@ -1,0 +1,46 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/assets/images/minecraft.png");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?dgap4v');
+  src:  url('fonts/icomoon.eot?dgap4v#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dgap4v') format('truetype'),
+    url('fonts/icomoon.woff?dgap4v') format('woff'),
+    url('fonts/icomoon.svg?dgap4v#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+  content: "\e900";
+  font-size: 1.4em;
+}
