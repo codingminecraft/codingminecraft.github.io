@@ -1,8 +1,8 @@
 ---
 ---
 
-$link-color: #92aa93;
-$navbar-color: #383527;
+$link-color: #3cc47c;
+$navbar-color: #1e392a;
 $light-gray: #bbb;
 
 html {
@@ -194,10 +194,18 @@ div.warning {
   background-color: $navbar-color;
 }
 
-.sidebar-title, .topbar-title {
-  font-size: 1.5em;
+.sidebar-title a, .topbar-title a {
+  color: $link-color;
+}
+
+.sidebar-title {
   border-bottom: 1px solid darken($link-color, 20%);
   color: $link-color;
+}
+
+.sidebar-title a:hover, .topbar-title a:hover {
+  color: darken($link-color, 25%);
+  text-decoration: none;
 }
 
 
@@ -234,14 +242,15 @@ div.warning {
     float: top;
     position: fixed;
     width: 100%;
-    height: 12%;
+    height: 8%;
+    z-index: 10;
   }
 
   .chapter-content {
     margin-top: 15%;
-    width: 80%;
+    width: 72%;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 18%;
   }
 
   .chapter-links {
@@ -256,7 +265,6 @@ div.warning {
     border: none;
     font-size: 2em;
     text-align: center;
-    z-index: 10;
   }
 
   .left-arrow {
@@ -266,5 +274,9 @@ div.warning {
 
   .right-arrow {
     border: none;
+  }
+
+  .code-header {
+    width: 90px;
   }
 }
