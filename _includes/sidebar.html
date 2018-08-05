@@ -1,11 +1,11 @@
 <div class="sidebar">
   <div class="sidebar-content">
     {% if page.toc == "" %}
-      <h1 class="sidebar-title">Coding Minecraft</h1>
+      <h1 class="sidebar-title"><a href="/">Coding Minecraft</a></h1>
     {% else %}
       <h1 class="sidebar-title">{{ page.title | replace: "-", " " }}</h1>
     {% endif %}
-    <h1 class="topbar-title">Coding Minecraft</h1>
+    <h1 class="topbar-title"><a href="/">Coding Minecraft</a></h1>
 
     <div class="chapter-links">
       {% for link in page.contents %}
@@ -16,7 +16,7 @@
       <br />
 
       <div class="chapter-link">
-        <a href="/toc" class="link">Table of Contents</a>
+        <a href="/Toc" class="link">Table of Contents</a>
       </div>
     </div>
   </div>
