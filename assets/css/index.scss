@@ -1,7 +1,8 @@
 ---
 ---
 
-$link-color: #3cc47c;
+$link-color: #1c1d22;
+$link-hover: #5c5edc;
 $navbar-color: #1e392a;
 $light-gray: #bbb;
 
@@ -24,7 +25,8 @@ a.link:visited {
 }
 
 a.link:hover {
-  color: darken($link-color, 25%);
+  //color: darken($link-color, 25%);
+  color: $link-hover;
   text-decoration: none;
 }
 
