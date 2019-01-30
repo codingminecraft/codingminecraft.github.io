@@ -8,10 +8,12 @@
     <h1 class="topbar-title"><a href="/">Coding Minecraft</a></h1>
 
     <div class="chapter-links">
+      {% assign i = 0 %}
       {% for link in page.contents %}
-      <div class="chapter-link">
-        <a href="#{{ link | replace: " ", "-" }}" class="link">{{ link }}</a>
-      </div>
+        {% assign i = i | plus:1 %}
+        <div class="chapter-link">
+          <a href="#{{ link | replace: " ", "-" }}" class="link"><b>{{i}}</b> {{ link }}</a>
+        </div>
       {% endfor %}
       <br />
 
