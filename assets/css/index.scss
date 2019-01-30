@@ -257,6 +257,18 @@ div.warning {
     z-index: 10;
   }
 
+  .title a {
+    font-size: 1em;
+  }
+
+  .right-arrow-text {
+    right: 11px;
+  }
+
+  .chapter-number {
+    display: none;
+  }
+
   .chapter-content {
     margin-top: 15%;
     width: 72%;
