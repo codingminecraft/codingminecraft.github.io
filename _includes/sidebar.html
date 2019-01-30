@@ -10,7 +10,7 @@
     <div class="chapter-links">
       {% for link in page.contents %}
       <div class="chapter-link">
-        <a href="#{{ link | replace: " ", "-" }}" class="link">- {{ link }}</a>
+        <a href="#{{ link | replace: " ", "-" }}" class="link">{{ link }}</a>
       </div>
       {% endfor %}
       <br />
