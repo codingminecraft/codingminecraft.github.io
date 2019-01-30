@@ -30,9 +30,12 @@ a.link:visited {
 }
 
 a.link:hover {
-  //color: darken($link-color, 25%);
   color: $link-hover;
   text-decoration: none;
+}
+
+.chapter-link {
+  padding: 4% 0;
 }
 
 p {
@@ -258,10 +261,6 @@ div.warning {
     width: 72%;
     margin-left: 10%;
     margin-right: 18%;
-  }
-
-  .chapter-link {
-    padding: 4% 0;
   }
 
   .chapter-links {
