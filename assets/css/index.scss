@@ -252,7 +252,8 @@ div.warning {
     float: top;
     position: fixed;
     width: 100%;
-    height: 8%;
+    height: 10%;
+    height: 10vh;
     z-index: 10;
   }
 
@@ -275,6 +276,9 @@ div.warning {
     border: none;
     font-size: 2em;
     text-align: center;
+    margin: 0;
+    height: 10vh;
+    line-height: 10vh;
   }
 
   .left-arrow {
