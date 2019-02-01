@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title:  "Appendix A"
-contents: ["Section 1", "Section 2"]
+contents: ["Project Crashed and will not Restart", "Section 2"]
 number: 1
 previousChapter: ""
 nextChapter: ""
