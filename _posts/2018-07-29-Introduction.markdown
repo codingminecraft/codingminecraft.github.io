@@ -12,7 +12,7 @@ Now, some of you may think Minecraft is a simple game that requires very little 
 
 After that exhaustive little bit on the problems, let me present you with some good news. I've solved these problems for you!
 
-<h3 class="section-title"><a href="#Who-is-this-book-for"><b><i>Section 1--Who is this book for</i></b></a></h3>
+<h3 class="section-title" id="Who-is-this-book-for"><a href="#Who-is-this-book-for"><b><i>Section 1--Who is this book for</i></b></a></h3>
 
 So, who is this book for? This book is for anyone who wants to learn how to code Minecraft. This book will teach you how to code it using the Unreal Engine. If you are not familiar with what Unreal Engine is, it is a game engine that does the underlying code for us, that way, we can start coding our game immediately. Some of the areas that Unreal already has coded include: lighting, physics, graphical processing, etc.
 
@@ -22,17 +22,17 @@ So, who is this book for? This book is for anyone who wants to learn how to code
 
 The Unreal Engine is a little bit daunting at first. If you have used Unity in the past, then Unreal will quickly become familiar. If you have not used either, Chapter 1 will have a brief overview of Unity.
 
-<h3 class="section-title"><a href="#What-prior-knowledge-is-required"><b><i>Section 2--What prior knowledge is required?</i></b></a></h3>
+<h3 class="section-title" id="What-prior-knowledge-is-required"><a href="#What-prior-knowledge-is-required"><b><i>Section 2--What prior knowledge is required?</i></b></a></h3>
 
 To complete this book, some prior knowledge would be very helpful. If you do not know how to code at all, then this book is not recommended for you. If you know how to code, but do not know how to code in C++, there will be a brief overview of C++ in Chapter 2. If you already know C++ and how to navigate Unreal Engine, feel free to skip Chapter 1 and Chapter 2.
 
-<h3 class="section-title"><a href="#Source-content"><b><i>Section 3--Source content</i></b></a></h3>
+<h3 class="section-title" id="Source-content"><a href="#Source-content"><b><i>Section 3--Source content</i></b></a></h3>
 
 Throughout this book we will be using content that is stored online. I have stored all the content that will be used in this book on Github. You can access the content through this link, <a href="https://github.com/CodingMinecraft-1/Coding_Minecraft">https://github.com/CodingMinecraft-1/Coding_Minecraft</a> . When you click on this link it will take you to a directory called CodingMinecraft. When you click into this directory you will find several other directories called Chapter 1, Chapter 2, etc. Within these directories you will find the answers to the exercises, content that is to be downloaded and more. If I ever refer to online content this is generally the link you will want to go to, unless I specify another link.
 
 So, just to emphasize, any content that is referred to throughout this book can be found online at the link above. I will store each chapter’s progress in the appropriate subfolder. I will typically provide a direct link to the folder. If you are not familiar with Git, Git is an online source control system. This basically means that if you are working on a project you can keep track of changes that you make on Github.com. This is very useful with coding, and if you are not already familiar with Git, I would highly recommend that you familiarize yourself with it. When you are working on a project, if you ever make a mistake that renders your code useless, and you cannot figure out what mistake was made, you can simply revert your project to an earlier version where it was working.
 
-<h3 class="section-title"><a>Section 4--Conventions used in this book</a></h3>
+<h3 class="section-title" id="Conventions-used-in-this-book"><a>Section 4--Conventions used in this book</a></h3>
 
 In this book there are different things I would like to point out to the reader from time to time. You have already seen an example of that in the above section. Typically, I will pull out the quote and put a simple description above it. There are four main types of quotes I will have:
 

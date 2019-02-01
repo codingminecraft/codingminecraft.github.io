@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title:  "A Brief Intro to C++"
-contents: ["Visual Studio", "Section 2"]
+contents: ["Visual Studio", "Hello World", "Control Flow", "Pointers", "Header Files", "Some Useful Libraries", "Practice Projects"]
 number: 1
 previousChapter: "Introduction"
 nextChapter: "Blueprints"
@@ -14,7 +14,7 @@ Since you can access memory addresses directly with C++, a simple error like try
 
 There are a few differences with C++ compared to other higher-level programming languages. In C++ you can have direct control over memory and where items are stored in memory. The most accentuated case of this are pointers. Also, you can store references to different objects in C++. So, you could have a reference to an object that you pass to a function, and you could change the value inside the function without returning a new variable.
 
-<h3 class="section-title"><a>Section 1&mdash;Visual Studio</a></h3>
+<h3 class="section-title" id="Visual-Studio"><a>Section 1&mdash;Visual Studio</a></h3>
 
 Before you can even begin coding in C++ you will need the necessary software to compile the code. That means you will need to install some programs. Now, the simplest tool for doing this, in my opinion, is Microsoft’s Visual Studio. The version of Visual Studio that this book will be using is the 2017 version. The specific version is not too important, as most of the functionality will be the same.
 
@@ -22,7 +22,7 @@ You can find the installation for Visual Studio at this link: <a href="https://w
 
 If you would rather not download Microsoft Visual Studio, you can follow the instructions at this Stack Overflow question: <a href="https://stackoverflow.com/questions/1115698/how-to-compile-a-c-file-without-visual-studio">https://stackoverflow.com/questions/1115698/</a>. I would highly recommend that you stick with Visual Studio though, it makes your coding much more efficient, and lends a helping hand in many different scenarios.
 
-<h3 class="section-title"><a>Section 2&mdash;Hello World</a></h3>
+<h3 class="section-title" id="Hello-World"><a>Section 2&mdash;Hello World</a></h3>
 
 In this section I will take you through how to build your first C++ program. We will build a very simple program that simply outputs “Hello World.”. First open Visual Studio, then select Create New Project, which will bring up a dialogue like Figure 1-1.
 
@@ -97,7 +97,7 @@ int main() {
 
 The only thing I have changed is that now there is the line that says <code>system(“pause”);</code> in between our first two lines. What this will do is pause the system until the user presses another key. To run this, you can simply press Ctr+F5 and then answer yes when Visual Studio prompts you to build the code. You should have a command prompt window appear that says, “Hello world!” and says to press any key to continue. And now you have completed your first C++ program!
 
-<h3 class="section-title"><a>Section 3&mdash;Control Flow</a></h3>
+<h3 class="section-title" id="Control-Flow"><a>Section 3&mdash;Control Flow</a></h3>
 
 The way you conduct control flow in C++ is very similar to any other programming languages. I will give a brief example of the main control flow statements.
 
@@ -174,7 +174,7 @@ There are two main things to notice about this code. The first thing is that thi
 
 C++ implements a couple more control flow features such as the <code>goto</code> statement, and the switch statement. I will not delve into these features be-cause they are not necessary for this project, if you want to learn more about them though go to this link: <a href="http://www.cplusplus.com/doc/tutorial/control/">http://www.cplusplus.com/doc/tutorial/control/</a>. And that wraps up the control flow features of C++!
 
-<h3 class="section-title"><a>Section 4&mdash;Pointers</a></h3>
+<h3 class="section-title" id="Pointers"><a>Section 4&mdash;Pointers</a></h3>
 
 In the strange world of C++ there are things called pointers. What are these things? Well, the short definition is that a pointer is a memory address stored at a different location in memory. Why in the world is this a thing?
 
@@ -259,7 +259,7 @@ What just happened there? If you are not familiar with python code, we just decl
 
 So hopefully this is a good introduction to pointers. Pointers are a very complicated subject, especially for newcomers to the C language. If you would like additional information on pointers, the documentation is great, and you can find it at this link:<a href="http://www.cplusplus.com/doc/tutorial/pointers/">http://www.cplusplus.com/doc/tutorial/pointers/</a>.
 
-<h3 class="section-title"><a>Section 5&mdash;Header Files</a></h3>
+<h3 class="section-title" id="Header-Files"><a>Section 5&mdash;Header Files</a></h3>
 
 Header files are another difference in C++ from other languages. In most languages, you declare variables and functions as you need them. Looking back at our Dragon example above, when you need a new method in the Dragon class you would just define it in the same file. In C++ this process is slightly different.
 
@@ -345,7 +345,7 @@ Notice how there is an asterisk after our Hello_World type. This asterisk is imp
 
 As the warning says, do not forget that because our class is a pointer, we must access its methods using the -> operator. It is intuitive when you use the Visual Studio IDE, because you can try the typing out class-> and if the class is a pointer, Visual Studio will suggest methods to use. If you are ever not sure whether you are dealing with a static method, a method on a pointer, or a method on a regular object, try typing in class::, class->, or class. and Visual studio will give suggested methods based on which operator is appropriate.
 
-<h3 class="section-title"><a>Section 6&mdash;Some Useful Libraries</a></h3>
+<h3 class="section-title" id="Some-Useful-Libraries"><a>Section 6&mdash;Some Useful Libraries</a></h3>
 
 Here are some useful libraries and some functionalities of these libraries. This is just so that you can complete the practice projects below. A standard practice among programming languages is the ability to add external libraries to your code. This is helpful for tasks like reading and writing to files, communicating with the operating system, using complex mathematical functions, using machine learning tools, etc. If you are ever not sure how to do something, Google it. The answer will most likely appear in the form of an external library, and sometimes it will not.
 
@@ -363,7 +363,7 @@ There are so many more libraries out there that it would be very difficult to li
 
 Good luck! The next chapter will introduce Blueprints and the Unreal Game Engine. We will build some simple projects and test the functionality of blueprints. And then we will begin coding Minecraft!
 
-<h3 class="section-title"><a>Practice Projects</a></h3>
+<h3 class="section-title" id="Practice-Projects"><a>Practice Projects</a></h3>
 
 **1. Project 1 (Guess My Number) —** Have you ever heard of the game guess my number? The premise is this, you think of a number between 1 and 1 000 000. Then the computer makes a guess, you type "H" to tell the computer to go higher, "L" to tell the computer to go lower, and "C" for correct. The computer has 20 guesses. Implement this in C++ using the basic operators for input and output.
 Include in the game a for loop, a while loop, a do-while loop, an if else statement, and the use of more than one function.
